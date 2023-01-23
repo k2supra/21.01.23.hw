@@ -62,10 +62,9 @@ int main() {
 	numen11 = rand() % 6 + 1;
 	numen12 = rand() % 6 + 1;
 	
-			
 	cout << "**" << numen11 << "/////" << numen12 << endl;
 		
-	if (numen11 == 1 || numen12 == 1)
+	if (numen11 == 1)
 	{
 		ifstream in("cubes\\1.txt");
 		if (in.is_open())
@@ -76,7 +75,7 @@ int main() {
 			}
 		}
 	}
-	if (numen11 == 2 || numen12 == 2)
+	if (numen11 == 2)
 	{
 		ifstream in("cubes\\2.txt");
 		if (in.is_open())
@@ -87,7 +86,7 @@ int main() {
 			}
 		}
 	}
-	if (numen11 == 3 || numen12 == 3)
+	if (numen11 == 3)
 	{
 		ifstream in("cubes\\3.txt");
 		if (in.is_open())
@@ -98,7 +97,7 @@ int main() {
 			}
 		}
 	}
-	if (numen11 == 4 || numen12 == 4)
+	if (numen11 == 4)
 	{
 		ifstream in("cubes\\4.txt");
 		if (in.is_open())
@@ -109,7 +108,7 @@ int main() {
 			}
 		}
 	}
-	if (numen11 == 5 || numen12 == 5)
+	if (numen11 == 5)
 	{
 		ifstream in("cubes\\5.txt");
 		if (in.is_open())
@@ -120,7 +119,7 @@ int main() {
 			}
 		}
 	}
-	if (numen11 == 6 || numen12 == 6)
+	if (numen11 == 6)
 	{
 		ifstream in("cubes\\6.txt");
 		if (in.is_open())
@@ -131,6 +130,73 @@ int main() {
 			}
 		}
 	}
+	if (numen12 == 1)
+	{
+		ifstream in("cubes\\1.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+	if (numen12 == 2)
+	{
+		ifstream in("cubes\\2.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+	if (numen12 == 3)
+	{
+		ifstream in("cubes\\3.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+	if (numen12 == 4)
+	{
+		ifstream in("cubes\\4.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+	if (numen12 == 5)
+	{
+		ifstream in("cubes\\5.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+	if (numen12 == 6)
+	{
+		ifstream in("cubes\\6.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+
 	
 	
 	/*numen1 = rand() % 7 + 1;
