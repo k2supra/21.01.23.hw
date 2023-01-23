@@ -2,11 +2,19 @@
 #include <ctime>
 #include <chrono>
 #include <thread>
+#include <Windows.h>
+#include <fstream>
+#include <string>
+#include <random>
+
+
 using namespace std;
 
 int main() {
 	srand(time(0));
-	this_thread::sleep_for(std::chrono::milliseconds(5000));
+	string line;
+	int sumen, sumpl, numen1, numen11, numen12, numen2, numen3, numpl1, numpl2, numpl3;
+	/*this_thread::sleep_for(std::chrono::milliseconds(5000));
 	cout << "Hello ";
 	this_thread::sleep_for(std::chrono::milliseconds(1500));
 	cout << "and welcome to the Los Pollos Hermanos family. ";
@@ -37,7 +45,111 @@ int main() {
 		cout << "OK. Let`s move. Secret phrase isssssss....... ";
 		cout << "I`hope you will lose)";
 	}
-	this_thread::sleep_for(std::chrono::milliseconds(1000));
-	cout << "*********************";
+	this_thread::sleep_for(std::chrono::milliseconds(5000));*/
+	//cout << "\n!!!Let`s start!!!";
+	//system("cls");
+	///*this_thread::sleep_for(std::chrono::milliseconds(5000));*/
+	//cout << "\n\t\tROUND 1";
+	//this_thread::sleep_for(std::chrono::milliseconds(2000));
+	//cout << "\nEnemy is throwing";
+	//this_thread::sleep_for(std::chrono::milliseconds(750));
+	//cout << ".";
+	//this_thread::sleep_for(std::chrono::milliseconds(750));
+	//cout << ".";
+	//this_thread::sleep_for(std::chrono::milliseconds(750));
+	//cout << ".\n";
+	
+	numen11 = rand() % 6 + 1;
+	numen12 = rand() % 6 + 1;
+	
+			
+	cout << "**" << numen11 << "/////" << numen12 << endl;
+		
+	if (numen11 == 1 || numen12 == 1)
+	{
+		ifstream in("cubes\\1.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+	if (numen11 == 2 || numen12 == 2)
+	{
+		ifstream in("cubes\\2.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+	if (numen11 == 3 || numen12 == 3)
+	{
+		ifstream in("cubes\\3.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+	if (numen11 == 4 || numen12 == 4)
+	{
+		ifstream in("cubes\\4.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+	if (numen11 == 5 || numen12 == 5)
+	{
+		ifstream in("cubes\\5.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+	if (numen11 == 6 || numen12 == 6)
+	{
+		ifstream in("cubes\\6.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}
+	
+	
+	/*numen1 = rand() % 7 + 1;
+	numen1 = rand() % 7 + 1;
+	cout << numen1;
+	if (numen1 == 1)
+	{
+		ifstream in("cubes\\1.txt");
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				std::cout << line << std::endl;
+			}
+		}
+	}*/
+
+	
+	
+	/*cout << "*********************";*/
 	
 }
